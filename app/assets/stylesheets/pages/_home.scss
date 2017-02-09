@@ -2,3 +2,10 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #CECECE;
+    background: #2A2B30;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

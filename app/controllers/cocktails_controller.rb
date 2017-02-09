@@ -1,4 +1,5 @@
 class CocktailsController < ApplicationController
+  layout "detail", only: [ :show ]
   def index
     @cocktails = Cocktail.all
   end
