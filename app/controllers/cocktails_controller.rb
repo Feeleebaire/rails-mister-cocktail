@@ -1,7 +1,11 @@
 class CocktailsController < ApplicationController
   layout "detail", only: [ :show ]
   def index
-    @cocktails = Cocktail.all
+    if params[:search].blank?
+      @cocktails = Cocktail.all
+    else
+      @cocktails = Cocktail.where("name iLIKE ?", "%#{params[:search]}%")
+    end
   end
 
   def show
