@@ -43,4 +43,9 @@
 }
 .card-link:hover{
   opacity: 0.1;
+  text-decoration: none;
+}
+a:hover, a:focus {
+    color: #1f74ba;
+    text-decoration: none;
 }
